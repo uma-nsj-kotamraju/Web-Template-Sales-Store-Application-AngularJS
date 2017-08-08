@@ -1,3 +1,13 @@
+# Web-Sales-Store-Application-AngularJS
+
+This is a Simple web template store - a place where developers go to buy web templates.
+
+
+Prerequisites
+
+angular-seed from  https://angularjs.org/
+
+
 # `angular-seed` — the seed for AngularJS apps
 
 This project is an application skeleton for a typical [AngularJS][angularjs] web app. You can use it
