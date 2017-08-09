@@ -4,11 +4,21 @@ angular.module('templateStore.templates',['ngRoute'])
 	$routeProvider.
 	      when('/templates',{
 	      	templateUrl: 'templates/templates.html',
-	      	controller: 'templatesCtrl'
-	      });
+	      	controller: 'TemplatesCtrl'
+	      })
+	      .when('/templates/:id', {
+             templateUrl: 'templates/template-details.html',
+              controller: 'TemplateDetailsCtrl'
+             }) 
+	       .otherwise({
+	       	  redirectTo: '/templates'
+	       });
 }])
 
-  . controller('templatesCtrl',['$scope',function($scope){
-  	console.log("Templates Ctrl Init");
-  	console.log($scope);
-  }]);
+  . controller('TemplatesCtrl',['$scope',function($scope){
+  	
+  	
+  }])
+  .controller('TemplateDetailsCtrl', ['$scope', '$http','$routeParams', function($scope, $http, $routeParams) {        
+     console.log($routeParams.templateId); 
+ 	}]);
