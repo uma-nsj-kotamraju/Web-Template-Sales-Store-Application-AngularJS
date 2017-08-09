@@ -6,7 +6,7 @@ angular.module('templateStore.templates',['ngRoute'])
 	      	templateUrl: 'templates/templates.html',
 	      	controller: 'TemplatesCtrl'
 	      })
-	      .when('/templates/:id', {
+	      .when('/templates/:templateId', {
              templateUrl: 'templates/template-details.html',
               controller: 'TemplateDetailsCtrl'
              }) 
@@ -15,10 +15,20 @@ angular.module('templateStore.templates',['ngRoute'])
 	       });
 }])
 
-  . controller('TemplatesCtrl',['$scope',function($scope){
+  . controller('TemplatesCtrl',['$scope','$http',function($scope,$http){
   	
-  	
+  	$http.get('json/templates.json').success(function(data){
+  		// console.log(data);
+  		$scope.templates = data;
+  	});
   }])
-  .controller('TemplateDetailsCtrl', ['$scope', '$http','$routeParams', function($scope, $http, $routeParams) {        
-     console.log($routeParams.templateId); 
+  .controller('TemplateDetailsCtrl', ['$scope','$routeParams','$http','$filter',  function($scope,$routeParams,$http,$filter) {  
+  var templateId = $routeParams.templateId;     
+     $http.get('json/templates.json').success(function(data){
+  		// console.log(data);
+  		$scope.templates = $filter('filter')(data,function(d){
+  			return d.id = templateId;
+  		})[0];
+  	$scope.mainImage = $scope.templates.images[0].name;
+  	});
  	}]);

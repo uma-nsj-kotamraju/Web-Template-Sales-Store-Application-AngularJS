@@ -1,0 +1,103 @@
+[
+
+     {
+        "id": "1",
+        "name": "Blue Theme",
+        "description": " perfectly clean, creative and minimal design offering numerous sections to create a great website which is suitable for personal portfolio, creative studio. This brilliant and minimal design was fine-tuned the smallest elements to ensure a free-from-flaws template which is suited for all engaging creative sites.",
+        "type": "HTML5",
+        "price": "19.99",
+        "images": [
+            {
+                "name":"blue.png"
+            },
+            {
+                "name":"2.jfif"
+            },
+
+             {
+                "name":"3.png"
+            },
+            {
+                "name":"blue.jfif"
+            },
+            {
+                "name":"1.jfif"
+            }
+
+        ]
+
+    },
+     {
+        "id": "2",
+        "name": "Red Theme",
+        "description": " perfectly clean, creative and minimal design offering numerous sections to create a great website which is suitable for personal portfolio, creative studio. This brilliant and minimal design was fine-tuned the smallest elements to ensure a free-from-flaws template which is suited for all engaging creative sites.",
+        "type": "HTML5",
+        "price": "29.99",
+        "images": [
+            {
+                "name":"red.jfif"
+            }
+
+        ],
+
+        "soldOut":true
+
+    },
+    {
+        "id": "3",
+        "name": "Yellow Theme",
+        "description": " perfectly clean, creative and minimal design offering numerous sections to create a great website which is suitable for personal portfolio, creative studio. This brilliant and minimal design was fine-tuned the smallest elements to ensure a free-from-flaws template which is suited for all engaging creative sites.",
+        "type": "HTML5",
+        "price": "9.99",
+        "images": [
+            
+            {
+                "name":"yellow.jfif"
+            }
+
+        ]
+
+    },
+    {
+        "id": "4",
+        "name": "Purple Theme",
+        "description": " perfectly clean, creative and minimal design offering numerous sections to create a great website which is suitable for personal portfolio, creative studio. This brilliant and minimal design was fine-tuned the smallest elements to ensure a free-from-flaws template which is suited for all engaging creative sites.",
+        "type": "HTML5",
+        "price": "29.99",
+        "images": [
+            {
+                "name":"purple.jfif"
+            }
+        ]
+
+    },
+    {
+        "id": "5",
+        "name": "Green Theme",
+        "description": " perfectly clean, creative and minimal design offering numerous sections to create a great website which is suitable for personal portfolio, creative studio. This brilliant and minimal design was fine-tuned the smallest elements to ensure a free-from-flaws template which is suited for all engaging creative sites.",
+        "type": "HTML5",
+        "price": "15.99",
+        "images": [
+            {
+                "name":"green.jfif"
+            }
+
+        ]
+
+    },
+    {
+        "id": "6",
+        "name": "Pink Theme",
+        "description": " perfectly clean, creative and minimal design offering numerous sections to create a great website which is suitable for personal portfolio, creative studio. This brilliant and minimal design was fine-tuned the smallest elements to ensure a free-from-flaws template which is suited for all engaging creative sites.",
+        "type": "HTML5",
+        "price": "19.99",
+        "images": [
+            {
+                "name":"pink.png"
+            }
+
+        ]
+
+    }
+
+]
